@@ -7,8 +7,8 @@ import { Footer } from '../components/layout/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'ModernUI - Beautiful UI Components',
-  description: 'Modern, animated UI components for your next project',
+  title: 'SynthLauncher',
+  description: 'Modern, Free and Open-Source Minecraft Launcher!',
 };
 
 export default function RootLayout({
