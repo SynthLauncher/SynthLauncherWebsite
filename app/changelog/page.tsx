@@ -147,7 +147,7 @@ export default function ChangelogPage() {
             working to make it better.
           </p>
 
-          {/* Category Filter */}
+          {/* Category Filter
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             {categories.map((category) => (
               <Button
@@ -159,7 +159,7 @@ export default function ChangelogPage() {
                 {category.label}
               </Button>
             ))}
-          </div>
+          </div> */}
         </motion.div>
 
         {/* Latest Release Card */}
