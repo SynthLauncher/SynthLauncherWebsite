@@ -38,7 +38,7 @@ export default function RootLayout({
       <body className={`${inter.className} min-h-screen bg-gradient-to-br from-purple-950 via-gray-900 to-black`}>
         <Navbar />
         
-        <main className="pt-16">
+        <main className='pt-12'>
           {children}
         </main>
         

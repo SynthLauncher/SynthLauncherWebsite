@@ -71,7 +71,7 @@ export default function ReleasesPage() {
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
@@ -83,10 +83,10 @@ export default function ReleasesPage() {
             Track our journey of continuous improvement and innovation. Each release
             brings new features and enhancements to ModernUI.
           </p>
-        </motion.div>
+        </motion.div> */}
 
         {/* Latest Release */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
@@ -112,7 +112,6 @@ export default function ReleasesPage() {
             </div>
 
             <div className="p-8">
-              {/* Stats Grid */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
                 {releases[0].stats.map((stat) => (
                   <div key={stat.label} className="text-center">
@@ -126,7 +125,6 @@ export default function ReleasesPage() {
                 ))}
               </div>
 
-              {/* Highlights */}
               <div className="mb-8">
                 <h3 className="text-xl font-semibold text-white mb-4">
                   Release Highlights
@@ -144,7 +142,6 @@ export default function ReleasesPage() {
                 </div>
               </div>
 
-              {/* Detailed Changes */}
               <div className="space-y-6">
                 {releases[0].changes.map((change) => (
                   <div
@@ -162,7 +159,6 @@ export default function ReleasesPage() {
                 ))}
               </div>
 
-              {/* Actions */}
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
                   <Download className="mr-2 h-4 w-4" /> Download v
@@ -177,7 +173,7 @@ export default function ReleasesPage() {
               </div>
             </div>
           </Card>
-        </motion.div>
+        </motion.div> */}
 
         {/* Previous Releases Timeline */}
         <div className="space-y-8">

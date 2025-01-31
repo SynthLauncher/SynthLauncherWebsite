@@ -61,26 +61,26 @@ export default function HomePage() {
       title: "Customizable Themes",
       description: "Easily match your brand identity",
     },
-    {
-      icon: Box,
-      title: "Reusable Components",
-      description: "Build faster with pre-made elements",
-    },
+    // {
+    //   icon: Box,
+    //   title: "Reusable Components",
+    //   description: "Build faster with pre-made elements",
+    // },
     {
       icon: Cpu,
       title: "Performance Optimized",
       description: "Blazing fast load times",
     },
-    {
-      icon: Gauge,
-      title: "Real-time Updates",
-      description: "Instant state management",
-    },
-    {
-      icon: Layers,
-      title: "Modern Architecture",
-      description: "Built with latest technologies",
-    },
+    // {
+    //   icon: Gauge,
+    //   title: "Real-time Updates",
+    //   description: "Instant state management",
+    // },
+    // {
+    //   icon: Layers,
+    //   title: "Modern Architecture",
+    //   description: "Built with latest technologies",
+    // },
   ];
 
   const stats = [
@@ -101,10 +101,10 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-black">
       {/* Hero Section with Animated Background */}
-      <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-purple-950 via-gray-900 to-black">
+      <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-hero bg-cover">
+        {/* <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-purple-950 via-gray-900 to-black">
           <div className="absolute inset-0 opacity-40"></div>
-        </div>
+        </div> */}
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
@@ -294,7 +294,7 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 relative bg-gradient-to-b from-purple-900/20 to-transparent">
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8 relative bg-gradient-to-b from-purple-900/20 to-transparent">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -349,7 +349,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
@@ -366,8 +366,7 @@ export default function HomePage() {
                 Ready to Get Started?
               </h2>
               <p className="text-xl text-purple-200/80 mb-8 max-w-2xl mx-auto">
-                Join thousands of developers building amazing applications with
-                ModernUI. Start building your next project today.
+                Join thousands of players with SynthLauncher today!
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Link href="/download">

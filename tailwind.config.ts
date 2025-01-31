@@ -14,6 +14,7 @@ const config: Config = {
         'gradient-title': 'linear-gradient(155deg, rgba(255,115,0,1) 0%, rgba(184,86,255,1) 100%)',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'hero': "url('/hero.png')"
       },
       borderRadius: {
         lg: 'var(--radius)',

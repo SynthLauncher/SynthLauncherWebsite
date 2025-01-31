@@ -24,11 +24,12 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function DownloadPage() {
   const platforms = [
     {
-      icon: Windows,
+      icon: "/windows.svg",
       name: "Windows",
       size: "120MB",
       type: ".exe",
@@ -36,7 +37,7 @@ export default function DownloadPage() {
       features: ["Auto-updates", "Native performance", "Windows integration"],
     },
     {
-      icon: Apple,
+      icon: "/apple.svg",
       name: "macOS",
       size: "115MB",
       type: ".dmg",
@@ -44,7 +45,7 @@ export default function DownloadPage() {
       features: ["Apple Silicon support", "Universal binary", "Touch Bar support"],
     },
     {
-      icon: Linux,
+      icon: "/linux.svg",
       name: "Linux",
       size: "110MB",
       type: ".AppImage",
@@ -102,10 +103,10 @@ export default function DownloadPage() {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Download ModernUI
+            Download SynthLauncher
           </h1>
           <p className="text-xl text-purple-200/80 max-w-2xl mx-auto">
-            Choose your platform and get started with ModernUI today. All versions
+            Choose your platform and get started with SynthLauncher today. All versions
             come with our full suite of features and regular updates.
           </p>
         </motion.div>
@@ -135,7 +136,14 @@ export default function DownloadPage() {
               transition={{ delay: index * 0.2 }}
             >
               <Card className="p-8 bg-purple-900/30 border-purple-500/30 backdrop-blur-sm hover:bg-purple-800/40 transition-all duration-300">
-                <platform.icon className="w-12 h-12 text-purple-400 mb-6" />
+                <Image 
+                  width={48}
+                  height={48}
+                  alt="icon"
+                  src={platform.icon}
+                  className="pb-3"
+                />
+
                 <h2 className="text-2xl font-bold text-white mb-2">
                   {platform.name}
                 </h2>
