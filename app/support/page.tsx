@@ -20,25 +20,25 @@ export default function SupportPage() {
     {
       icon: Book,
       title: "Documentation",
-      description: "Comprehensive guides and API references",
+      description: "Comprehensive docs",
       link: "#",
     },
     {
       icon: MessageCircle,
       title: "Community Forum",
-      description: "Connect with other developers",
+      description: "Get support",
       link: "#",
     },
     {
       icon: GitBranch,
       title: "GitHub Issues",
-      description: "Report bugs and request features",
+      description: "Report bugs",
       link: "#",
     },
     {
       icon: Globe,
       title: "Status Page",
-      description: "System status and updates",
+      description: "SynthLauncher Status",
       link: "#",
     },
   ];
@@ -62,7 +62,7 @@ export default function SupportPage() {
         </motion.div>
 
         {/* Search Section */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
@@ -82,7 +82,7 @@ export default function SupportPage() {
               </Button>
             </div>
           </Card>
-        </motion.div>
+        </motion.div> */}
 
         {/* Support Options Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
@@ -101,7 +101,7 @@ export default function SupportPage() {
                 <p className="text-purple-200/80 mb-4">{option.description}</p>
                 <Button
                   variant="ghost"
-                  className="w-full text-purple-200 hover:bg-purple-500/20"
+                  className="w-full text-purple-200 hover:text-white hover:bg-purple-500/20"
                 >
                   Learn More
                 </Button>
@@ -176,7 +176,7 @@ export default function SupportPage() {
             </p>
             <Button
               variant="outline"
-              className="border-purple-500 text-purple-200 hover:bg-purple-500/20"
+              className="border-purple-500 text-black hover:text-purple-200 hover:bg-purple-500/20"
             >
               Join Discord
             </Button>

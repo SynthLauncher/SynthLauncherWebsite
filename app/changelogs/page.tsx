@@ -140,7 +140,7 @@ export default function ChangelogPage() {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Changelog
+            Changelogs
           </h1>
           <p className="text-xl text-purple-200/80 max-w-2xl mx-auto">
             Keep track of updates and improvements to ModernUI. We're constantly

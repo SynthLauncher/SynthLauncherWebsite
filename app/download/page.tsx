@@ -111,7 +111,7 @@ export default function DownloadPage() {
         </motion.div>
 
         {/* Stats Section */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
@@ -123,7 +123,7 @@ export default function DownloadPage() {
               <p className="text-purple-200/80">{stat.label}</p>
             </Card>
           ))}
-        </motion.div>
+        </motion.div> */}
 
         {/* Download Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -164,7 +164,7 @@ export default function DownloadPage() {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
@@ -181,10 +181,10 @@ export default function DownloadPage() {
               </Card>
             </motion.div>
           ))}
-        </div>
+        </div> */}
 
         {/* Enterprise Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -234,14 +234,41 @@ export default function DownloadPage() {
               </div>
             </Card>
           </motion.div>
-        </div>
+        </div> */}
+
+        {/* Security Features */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+        >
+          <Card className="p-8 bg-gradient-to-br from-purple-900/40 to-purple-800/40 border-purple-500/30 backdrop-blur-sm bg-transparent">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <Lock className="w-8 h-8 text-purple-400 mx-auto mb-4" />
+                <h4 className="text-lg font-semibold text-white mb-2">Secure by Default</h4>
+                <p className="text-purple-200/80">Built-in security features to protect your data</p>
+              </div>
+              <div className="text-center">
+                <Shield className="w-8 h-8 text-purple-400 mx-auto mb-4" />
+                <h4 className="text-lg font-semibold text-white mb-2">Enterprise Ready</h4>
+                <p className="text-purple-200/80">Compliant with industry standards</p>
+              </div>
+              <div className="text-center">
+                <Users className="w-8 h-8 text-purple-400 mx-auto mb-4" />
+                <h4 className="text-lg font-semibold text-white mb-2">Team Management</h4>
+                <p className="text-purple-200/80">Advanced user roles and permissions</p>
+              </div>
+            </div>
+          </Card>
+        </motion.div>
 
         {/* System Requirements */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="mb-16"
+          className="mt-16"
         >
           <Card className="p-8 bg-purple-900/30 border-purple-500/30 backdrop-blur-sm">
             <h3 className="text-2xl font-bold text-white mb-6">System Requirements</h3>
@@ -277,32 +304,7 @@ export default function DownloadPage() {
           </Card>
         </motion.div>
 
-        {/* Security Features */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-        >
-          <Card className="p-8 bg-gradient-to-br from-purple-900/40 to-purple-800/40 border-purple-500/30 backdrop-blur-sm bg-transparent">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <Lock className="w-8 h-8 text-purple-400 mx-auto mb-4" />
-                <h4 className="text-lg font-semibold text-white mb-2">Secure by Default</h4>
-                <p className="text-purple-200/80">Built-in security features to protect your data</p>
-              </div>
-              <div className="text-center">
-                <Shield className="w-8 h-8 text-purple-400 mx-auto mb-4" />
-                <h4 className="text-lg font-semibold text-white mb-2">Enterprise Ready</h4>
-                <p className="text-purple-200/80">Compliant with industry standards</p>
-              </div>
-              <div className="text-center">
-                <Users className="w-8 h-8 text-purple-400 mx-auto mb-4" />
-                <h4 className="text-lg font-semibold text-white mb-2">Team Management</h4>
-                <p className="text-purple-200/80">Advanced user roles and permissions</p>
-              </div>
-            </div>
-          </Card>
-        </motion.div>
+
       </div>
     </div>
   );

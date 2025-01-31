@@ -14,7 +14,7 @@ export function Navbar() {
     { href: "/", label: "Home" },
     { href: "/download", label: "Download" },
     { href: "/support", label: "Support" },
-    { href: "/changelog", label: "Changelog" },
+    { href: "/changelogs", label: "Changelogs" },
     { href: "/releases", label: "Releases" }
   ];
 

@@ -41,12 +41,12 @@ export default function HomePage() {
     {
       icon: Code,
       title: "Developer Friendly",
-      description: "Intuitive API and great documentation",
+      description: "Very customizable UI and functions",
     },
     {
       icon: Globe,
-      title: "Global Scale",
-      description: "Deploy worldwide in seconds",
+      title: "Multiplayer",
+      description: "Play with your friends",
     },
   ];
 
@@ -141,13 +141,13 @@ export default function HomePage() {
             >
               <Download className="mr-2 h-5 w-5" /> Get Started
             </Button>
-            <Button
+            {/* <Button
               size="lg"
               variant="outline"
               className="border-purple-500 border-dashed border-2 bg-transparent text-white hover:text-purple-200 hover:bg-purple-500/20 text-lg h-14 px-8 active:scale-95 transition-all duration-300"
             >
               View Components
-            </Button>
+            </Button> */}
           </motion.div>
         </div>
       </div>
@@ -188,7 +188,7 @@ export default function HomePage() {
               Powerful Features
             </h2>
             <p className="text-xl text-purple-200/80 max-w-2xl mx-auto">
-              Everything you need to build modern web applications
+              Everything you need to start your Minecraft journey!
             </p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -230,7 +230,7 @@ export default function HomePage() {
               ?
             </h2>
             <p className="text-xl text-purple-200/80 max-w-2xl mx-auto">
-              Built with the latest technologies and best practices
+              The new, game-changing launcher!
             </p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
