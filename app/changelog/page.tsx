@@ -152,7 +152,7 @@ export default function ChangelogPage() {
               <Button
                 key={category.label}
                 variant="outline"
-                className="border-purple-500/30 text-purple-200 hover:bg-purple-500/20"
+                className="border-purple-500/30 text-black hover:bg-purple-500/20 hover:text-purple-200"
               >
                 <category.icon className="w-4 h-4 mr-2" />
                 {category.label}
@@ -239,7 +239,7 @@ export default function ChangelogPage() {
                 </Button>
                 <Button
                   variant="outline"
-                  className="border-purple-500 text-purple-200 hover:bg-purple-500/20"
+                  className="border-purple-500 text-black hover:text-purple-200 hover:bg-purple-500/20"
                 >
                   View Documentation
                 </Button>
@@ -301,27 +301,6 @@ export default function ChangelogPage() {
             </motion.div>
           ))}
         </div>
-
-        {/* Subscribe Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
-          className="mt-16"
-        >
-          <Card className="p-8 bg-gradient-to-br from-purple-900/40 to-purple-800/40 border-purple-500/30 backdrop-blur-sm text-center">
-            <h2 className="text-2xl font-bold text-white mb-4">
-              Stay Updated
-            </h2>
-            <p className="text-purple-200/80 mb-6">
-              Subscribe to our newsletter to get notified about new releases and
-              features.
-            </p>
-            <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
-              Subscribe to Updates
-            </Button>
-          </Card>
-        </motion.div>
       </div>
     </div>
   );

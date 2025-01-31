@@ -114,7 +114,7 @@ export default function HomePage() {
           >
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Begin your journey with
-              <span className="py-3 block bg-gradient-to-r from-purple-400 via-pink-600 to-orange-500 text-transparent bg-clip-text tracking-wide">
+              <span className="py-3 block bg-gradient-title text-transparent bg-clip-text tracking-wide">
                 SynthLauncher
               </span>
             </h1>

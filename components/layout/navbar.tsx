@@ -5,6 +5,7 @@ import { Github, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,7 @@ export function Navbar() {
 
   return (
     <nav className="fixed w-full z-50 bg-black/20 backdrop-blur-lg border-b border-purple-500/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
         <div className="flex items-center justify-between h-16">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -27,9 +28,17 @@ export function Navbar() {
             className="flex-shrink-0"
           >
             <Link href="/" className="flex items-center space-x-2">
-              <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">
-                ModernUI
-              </span>
+              <Image 
+                width={285}
+                height={285}
+                alt="logo"
+                src="/navlogo.svg"
+                quality={100}
+              />
+
+              {/* <span className="text-2xl font-bold bg-gradient-title text-transparent bg-clip-text">
+                  SynthLauncher
+              </span> */}
             </Link>
           </motion.div>
 
