@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function ChangelogPage() {
   const releases = [
@@ -32,7 +33,7 @@ export default function ChangelogPage() {
       title: "Performance Boost Update",
       description:
         "Major performance improvements and new features for a better development experience.",
-      banner: "https://source.unsplash.com/random/1200x400?code",
+      banner: "https://wallpapers.com/images/featured/minecraft-s2kxfahyg30sob8q.jpg",
       changes: [
         {
           type: "feature",
@@ -171,9 +172,11 @@ export default function ChangelogPage() {
           <Card className="overflow-hidden bg-purple-900/30 border-purple-500/30">
             {/* Banner Image */}
             <div className="relative h-64">
-              <img
+              <Image
                 src={releases[0].banner}
                 alt="Release banner"
+                width={0}
+                height={0}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />

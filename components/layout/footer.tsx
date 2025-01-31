@@ -48,11 +48,11 @@ export function Footer() {
           >
             <Link href="/" className="flex items-center space-x-2">
               <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">
-                ModernUI
+                SynthLauncher
               </span>
             </Link>
             <p className="text-purple-200/60 text-sm">
-              Beautiful, modern UI components for your next project.
+              Modern, Open-Source, Free Minecraft Launcher For Everyone!
             </p>
             <div className="flex space-x-4">
               <a
@@ -111,19 +111,13 @@ export function Footer() {
         >
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-purple-200/60 text-sm">
-              © 2024 ModernUI. All rights reserved.
+              © 2024 SynthLauncher ORG. All rights reserved.
             </p>
             <div className="flex items-center space-x-4 text-sm text-purple-200/60">
-              <Link href="#" className="hover:text-purple-200 transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="#" className="hover:text-purple-200 transition-colors">
-                Terms of Service
-              </Link>
               <span className="flex items-center space-x-1">
                 <span>Made with</span>
                 <Heart className="h-4 w-4 text-red-500" />
-                <span>by ModernUI Team</span>
+                <span>by SynthLauncher Team</span>
               </span>
             </div>
           </div>

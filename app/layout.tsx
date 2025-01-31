@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: 'Modern, Free and Open-Source Minecraft Launcher!',
   keywords: ["Minecraft", "Free", "Secure", "Game", "Blocks", "Caves", "Launcher", "Creeper", "Block Game"],
   openGraph: {
-    title: "My Website Title",
+    title: "",
     description: "This is the description of my website.",
     url: "https://example.com",
     siteName: "My Website",

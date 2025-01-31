@@ -117,7 +117,7 @@ export default function SupportPage() {
           transition={{ delay: 0.4 }}
           className="max-w-2xl mx-auto"
         >
-          <Card className="p-8 bg-gradient-to-br from-purple-900/40 to-purple-800/40 border-purple-500/30 backdrop-blur-sm">
+          <Card className="p-8 bg-gradient-to-br from-purple-900/40 to-purple-800/40 border-purple-500/30 backdrop-blur-sm bg-transparent">
             <h2 className="text-2xl font-bold text-white mb-6">
               Still Need Help?
             </h2>
@@ -165,7 +165,7 @@ export default function SupportPage() {
           transition={{ delay: 0.6 }}
           className="mt-16 text-center"
         >
-          <Card className="p-8 bg-gradient-to-br from-purple-900/40 to-purple-800/40 border-purple-500/30 backdrop-blur-sm">
+          <Card className="p-8 bg-gradient-to-br from-purple-900/40 to-purple-800/40 border-purple-500/30 backdrop-blur-sm bg-transparent">
             <Users className="w-12 h-12 text-purple-400 mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-white mb-4">
               Join Our Community

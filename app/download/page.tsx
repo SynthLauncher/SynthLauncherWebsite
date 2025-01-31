@@ -189,7 +189,7 @@ export default function DownloadPage() {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
           >
-            <Card className="p-8 bg-gradient-to-br from-purple-900/40 to-purple-800/40 border-purple-500/30 backdrop-blur-sm h-full">
+            <Card className="p-8 bg-gradient-to-br from-purple-900/40 to-purple-800/40 border-purple-500/30 backdrop-blur-sm h-full bg-transparent">
               <Shield className="w-8 h-8 text-purple-400 mb-4" />
               <h3 className="text-xl font-bold text-white mb-4">
                 Enterprise Edition
@@ -212,7 +212,7 @@ export default function DownloadPage() {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
           >
-            <Card className="p-8 bg-gradient-to-br from-purple-900/40 to-purple-800/40 border-purple-500/30 backdrop-blur-sm h-full">
+            <Card className="p-8 bg-gradient-to-br from-purple-900/40 to-purple-800/40 border-purple-500/30 backdrop-blur-sm h-full bg-transparent">
               <Rocket className="w-8 h-8 text-purple-400 mb-4" />
               <h3 className="text-xl font-bold text-white mb-4">
                 Developer Edition
@@ -224,7 +224,7 @@ export default function DownloadPage() {
               <div className="space-y-4">
                 <Button
                   variant="outline"
-                  className="w-full border-purple-500 text-purple-200 hover:bg-purple-500/20"
+                  className="w-full border-purple-500 text-black hover:text-purple-200 hover:bg-purple-500/20"
                 >
                   <FileDown className="mr-2 h-4 w-4" /> Download SDK
                 </Button>
@@ -283,7 +283,7 @@ export default function DownloadPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
         >
-          <Card className="p-8 bg-gradient-to-br from-purple-900/40 to-purple-800/40 border-purple-500/30 backdrop-blur-sm">
+          <Card className="p-8 bg-gradient-to-br from-purple-900/40 to-purple-800/40 border-purple-500/30 backdrop-blur-sm bg-transparent">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
                 <Lock className="w-8 h-8 text-purple-400 mx-auto mb-4" />
