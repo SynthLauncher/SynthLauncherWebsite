@@ -2,35 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 🌍 Apply to All Browsers */
 * {
-  scrollbar-width: thin; /* Firefox: Makes scrollbar thinner */
-  scrollbar-color: #850bff #180803; /* Firefox: Thumb & Track Colors */
+  scrollbar-width: thin; 
 }
-
-/* 🌐 WebKit-based Browsers (Chrome, Edge, Safari) */
-::-webkit-scrollbar {
-  width: 10px; /* Match Firefox */
-}
-
-/* Scrollbar Track (Background) */
-::-webkit-scrollbar-track {
-  background: #180803; /* Darker background for contrast */
-  border-radius: 10px;
-}
-
-/* Scrollbar Thumb (Handle) */
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(45deg, #850bff, #d885ff); /* Beautiful gradient */
-  border-radius: 10px;
-  border: 2px solid #180803; /* Matches Firefox */
-}
-
-/* Hover Effect */
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(45deg, #7500e0, #c274ff);
-}
-
 
 :root {
   --foreground-rgb: 0, 0, 0;
