@@ -13,15 +13,15 @@ export const metadata: Metadata = {
   keywords: ["Minecraft", "Free", "Secure", "Game", "Blocks", "Caves", "Launcher", "Creeper", "Block Game"],
   openGraph: {
     title: "SynthLauncher",
-    description: "This is the description of my website.",
+    description: "Modern, Free and Open-Source Minecraft Launcher!",
     url: "https://example.com",
-    siteName: "My Website",
+    siteName: "SynthLauncher",
     images: [
       {
-        url: "https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg",
+        url: "https://cdn.prod.website-files.com/610ff99467acf52f27504987/6217aed40d6ca91862228861_minecraft-p-1600.jpeg",
         width: 1200,
         height: 630,
-        alt: "My OG Image",
+        alt: "Minecraft",
       },
     ],
     type: "website",
@@ -37,9 +37,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} min-h-screen bg-gradient-to-br from-purple-900 via-gray-900 to-black`}>
         <Navbar />
-        
-        <main className='pt-12'>
-          {children}
+
+        <main>
+            {children}
         </main>
         
         <Footer />
