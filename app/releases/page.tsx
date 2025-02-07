@@ -22,50 +22,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
 export default function ReleasesPage() {
-  const releases = [
-    {
-      version: "2.0.1",
-      date: "March 15, 2024",
-      type: "major",
-      banner: "https://source.unsplash.com/random/1200x400?technology",
-      title: "Performance Boost Update",
-      description:
-        "A major update focusing on performance improvements and new features.",
-      highlights: [
-        "50% faster rendering",
-        "Reduced bundle size",
-        "New component library",
-        "Improved documentation",
-      ],
-      changes: [
-        {
-          type: "feature",
-          icon: Sparkles,
-          title: "New Component Library",
-          description: "20+ new components with modern design",
-        },
-        {
-          type: "improvement",
-          icon: Zap,
-          title: "Performance Optimization",
-          description: "50% faster rendering and reduced bundle size",
-        },
-        {
-          type: "bugfix",
-          icon: Bug,
-          title: "Critical Fixes",
-          description: "Resolved memory leaks and UI inconsistencies",
-        },
-      ],
-      stats: [
-        { label: "New Features", value: "20+" },
-        { label: "Improvements", value: "15" },
-        { label: "Bug Fixes", value: "30+" },
-        { label: "Performance Gain", value: "50%" },
-      ],
-    },
-    // Add more releases here
-  ];
+
 
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">

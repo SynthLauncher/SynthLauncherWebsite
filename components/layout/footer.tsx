@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Github, Heart, Twitter } from "lucide-react";
 import Link from "next/link";
+import { MutableRefObject } from "react";
 
 export function Footer() {
   const footerSections = [

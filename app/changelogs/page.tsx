@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import {
-  ArrowRight,
   Bug,
   Check,
   GitBranch,
@@ -11,125 +10,15 @@ import {
   Rocket,
   Sparkles,
   Zap,
-  Star,
   Shield,
   Code,
-  Globe,
-  Layout,
-  Cpu,
-  Terminal,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
+import { changelogs } from "@/lib/data";
 
 export default function ChangelogPage() {
-  const releases = [
-    {
-      version: "2.0.1",
-      date: "March 15, 2024",
-      type: "major",
-      icon: Rocket,
-      title: "Performance Boost Update",
-      description:
-        "Major performance improvements and new features for a better development experience.",
-      banner: "https://wallpapers.com/images/featured/minecraft-s2kxfahyg30sob8q.jpg",
-      changes: [
-        {
-          type: "feature",
-          icon: Sparkles,
-          title: "New Component Library",
-          description: "Introducing 20+ new components with modern design",
-          details: [
-            "Responsive layouts",
-            "Dark mode support",
-            "Accessibility improvements",
-            "New animations",
-          ],
-        },
-        {
-          type: "improvement",
-          icon: Zap,
-          title: "Performance Optimization",
-          description: "50% faster rendering and reduced bundle size",
-          details: [
-            "Improved code splitting",
-            "Better tree shaking",
-            "Optimized asset loading",
-            "Reduced memory usage",
-          ],
-        },
-        {
-          type: "bugfix",
-          icon: Bug,
-          title: "Critical Fixes",
-          description: "Resolved memory leaks and UI inconsistencies",
-          details: [
-            "Fixed memory leaks",
-            "Resolved UI glitches",
-            "Improved error handling",
-            "Better type safety",
-          ],
-        },
-      ],
-      stats: [
-        { label: "New Features", value: "20+" },
-        { label: "Performance Gain", value: "50%" },
-        { label: "Bug Fixes", value: "30+" },
-        { label: "File Size", value: "-25%" },
-      ],
-    },
-    {
-      version: "1.9.0",
-      date: "March 1, 2024",
-      type: "minor",
-      icon: GitPullRequest,
-      title: "Developer Experience Update",
-      description: "Enhanced developer tools and documentation improvements.",
-      banner: "https://source.unsplash.com/random/1200x400?developer",
-      changes: [
-        {
-          type: "feature",
-          icon: GitBranch,
-          title: "Advanced Theming",
-          description: "New theming system with better customization",
-          details: [
-            "Custom color schemes",
-            "Theme builder",
-            "CSS variables support",
-            "Real-time preview",
-          ],
-        },
-        {
-          type: "improvement",
-          icon: GitCommit,
-          title: "Documentation",
-          description: "Expanded guides and API documentation",
-          details: [
-            "Interactive examples",
-            "Better search",
-            "Video tutorials",
-            "API playground",
-          ],
-        },
-      ],
-      stats: [
-        { label: "New Features", value: "10+" },
-        { label: "Doc Pages", value: "100+" },
-        { label: "Examples", value: "50+" },
-        { label: "Contributors", value: "25+" },
-      ],
-    },
-  ];
-
-  const categories = [
-    { icon: Rocket, label: "Features" },
-    { icon: Zap, label: "Performance" },
-    { icon: Bug, label: "Bug Fixes" },
-    { icon: Shield, label: "Security" },
-    { icon: Code, label: "Developer Tools" },
-  ];
-
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto mt-5">
@@ -146,20 +35,6 @@ export default function ChangelogPage() {
             Keep track of updates and improvements to ModernUI. We're constantly
             working to make it better.
           </p>
-
-          {/* Category Filter
-          <div className="flex flex-wrap justify-center gap-4 mt-8">
-            {categories.map((category) => (
-              <Button
-                key={category.label}
-                variant="outline"
-                className="border-purple-500/30 text-black hover:bg-purple-500/20 hover:text-purple-200"
-              >
-                <category.icon className="w-4 h-4 mr-2" />
-                {category.label}
-              </Button>
-            ))}
-          </div> */}
         </motion.div>
 
         {/* Latest Release Card */}
@@ -173,7 +48,7 @@ export default function ChangelogPage() {
             {/* Banner Image */}
             <div className="relative h-64">
               <Image
-                src={releases[0].banner}
+                src={changelogs[0].banner}
                 alt="Release banner"
                 width={0}
                 height={0}
@@ -185,7 +60,7 @@ export default function ChangelogPage() {
                   Latest Release
                 </span>
                 <h2 className="text-3xl font-bold text-white mt-2">
-                  v{releases[0].version} - {releases[0].title}
+                  v{changelogs[0].version} - {changelogs[0].title}
                 </h2>
               </div>
             </div>
@@ -193,7 +68,7 @@ export default function ChangelogPage() {
             <div className="p-8">
               {/* Stats Grid */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-                {releases[0].stats.map((stat) => (
+                {changelogs[0].stats.map((stat) => (
                   <div key={stat.label} className="text-center">
                     <div className="text-2xl font-bold text-white mb-1">
                       {stat.value}
@@ -207,7 +82,7 @@ export default function ChangelogPage() {
 
               {/* Changes */}
               <div className="space-y-8">
-                {releases[0].changes.map((change) => (
+                {changelogs[0].changes.map((change) => (
                   <div key={change.title} className="space-y-4">
                     <div className="flex items-start space-x-4">
                       <change.icon className="w-6 h-6 text-purple-400 mt-1" />
@@ -238,7 +113,7 @@ export default function ChangelogPage() {
               {/* Actions */}
               <div className="mt-8 flex flex-wrap gap-4">
                 <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
-                  Download v{releases[0].version}
+                  Download v{changelogs[0].version}
                 </Button>
                 <Button
                   variant="outline"
@@ -251,9 +126,9 @@ export default function ChangelogPage() {
           </Card>
         </motion.div>
 
-        {/* Previous Releases */}
+        {/* Previous changelogs */}
         <div className="space-y-8">
-          {releases.slice(1).map((release, index) => (
+          {changelogs.slice(1).map((release, index) => (
             <motion.div
               key={release.version}
               initial={{ opacity: 0, y: 20 }}

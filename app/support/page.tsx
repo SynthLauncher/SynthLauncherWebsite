@@ -2,47 +2,16 @@
 
 import { motion } from "framer-motion";
 import {
-  Book,
-  GitBranch,
-  Globe,
-  HelpCircle,
   Mail,
-  MessageCircle,
   Users,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { supportOptions } from "@/lib/data";
 
 export default function SupportPage() {
-  const supportOptions = [
-    {
-      icon: Book,
-      title: "Documentation",
-      description: "Comprehensive docs",
-      link: "#",
-    },
-    {
-      icon: MessageCircle,
-      title: "Community Forum",
-      description: "Get support",
-      link: "#",
-    },
-    {
-      icon: GitBranch,
-      title: "GitHub Issues",
-      description: "Report bugs",
-      link: "#",
-    },
-    {
-      icon: Globe,
-      title: "Status Page",
-      description: "SynthLauncher Status",
-      link: "#",
-    },
-  ];
-
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto mt-5">
@@ -60,29 +29,6 @@ export default function SupportPage() {
             assist you every step of the way.
           </p>
         </motion.div>
-
-        {/* Search Section */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="max-w-2xl mx-auto mb-16"
-        >
-          <Card className="p-6 bg-purple-900/30 border-purple-500/30 backdrop-blur-sm">
-            <div className="flex items-center space-x-4">
-              <div className="flex-1">
-                <Input
-                  type="text"
-                  placeholder="Search our documentation..."
-                  className="bg-purple-900/30 border-purple-500/30 text-purple-200 placeholder:text-purple-400/50"
-                />
-              </div>
-              <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
-                Search
-              </Button>
-            </div>
-          </Card>
-        </motion.div> */}
 
         {/* Support Options Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
