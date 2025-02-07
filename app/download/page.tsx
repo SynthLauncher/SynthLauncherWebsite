@@ -54,6 +54,8 @@ export default function DownloadPage() {
                 size={platform.size}
                 type={platform.type}
                 version={platform.version}
+                imageWidth={40}
+                imageHeight={40}   
               />
             </motion.div>
           ))}
