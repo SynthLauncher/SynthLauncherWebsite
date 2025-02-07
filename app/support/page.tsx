@@ -1,10 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Mail,
-  Users,
-} from "lucide-react";
+import { Mail, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -117,8 +114,8 @@ export default function SupportPage() {
               Join Our Community
             </h2>
             <p className="text-purple-200/80 mb-6 max-w-xl mx-auto">
-              Connect with thousands of developers in our community. Share ideas,
-              get help, and collaborate on projects.
+              Connect with thousands of developers in our community. Share
+              ideas, get help, and collaborate on projects.
             </p>
             <Button
               variant="outline"

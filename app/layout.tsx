@@ -1,15 +1,25 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { Navbar } from '../components/layout/navbar';
-import { Footer } from '../components/layout/footer';
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { Navbar } from "../components/layout/navbar";
+import { Footer } from "../components/layout/footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'SynthLauncher',
-  description: 'Modern, Free and Open-Source Minecraft Launcher!',
-  keywords: ["Minecraft", "Free", "Secure", "Game", "Blocks", "Caves", "Launcher", "Creeper", "Block Game"],
+  title: "SynthLauncher",
+  description: "Modern, Free and Open-Source Minecraft Launcher!",
+  keywords: [
+    "Minecraft",
+    "Free",
+    "Secure",
+    "Game",
+    "Blocks",
+    "Caves",
+    "Launcher",
+    "Creeper",
+    "Block Game",
+  ],
   openGraph: {
     title: "SynthLauncher",
     description: "Modern, Free and Open-Source Minecraft Launcher!",
@@ -34,16 +44,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-screen bg-gradient-to-br from-purple-900 via-gray-900 to-black`}>
+      <body
+        className={`${inter.className} min-h-screen bg-gradient-to-br from-purple-900 via-gray-900 to-black`}
+      >
         <Navbar />
 
-        <main>
-            {children}
-        </main>
-        
+        <main>{children}</main>
+
         <Footer />
 
-        <SpeedInsights /> 
+        <SpeedInsights />
       </body>
     </html>
   );

@@ -5,7 +5,7 @@ const SecurityCard = ({
   icon: Icon,
   title,
   description,
-  
+
   className,
   innerClassName,
   boxClassName,

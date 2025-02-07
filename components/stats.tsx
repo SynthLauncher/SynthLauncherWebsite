@@ -1,7 +1,14 @@
 import { StatsProps } from "@/types/types";
 import { motion } from "framer-motion";
 
-const Stats = ({ stats, className, innerClassName, gridClassName, numberClassName, labelClassName } : StatsProps) => {
+const Stats = ({
+  stats,
+  className,
+  innerClassName,
+  gridClassName,
+  numberClassName,
+  labelClassName,
+}: StatsProps) => {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 relative">
       <div className="max-w-7xl mx-auto">
