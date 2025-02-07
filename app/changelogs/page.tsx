@@ -153,7 +153,9 @@ export default function ChangelogPage() {
                         : "bg-purple-500/20 text-purple-200"
                     }`}
                   >
-                    {release.type === "major" ? "Major Release" : "Minor Release"}
+                    {release.type === "major"
+                      ? "Major Release"
+                      : "Minor Release"}
                   </span>
                 </div>
                 <p className="text-purple-200/80 mb-6">{release.description}</p>

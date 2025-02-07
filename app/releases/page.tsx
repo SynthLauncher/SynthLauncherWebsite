@@ -22,8 +22,6 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
 export default function ReleasesPage() {
-
-
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto mt-5">
@@ -133,9 +131,7 @@ export default function ReleasesPage() {
         </motion.div> */}
 
         {/* Previous Releases Timeline */}
-        <div className="space-y-8">
-          {/* Add previous releases here */}
-        </div>
+        <div className="space-y-8">{/* Add previous releases here */}</div>
       </div>
     </div>
   );

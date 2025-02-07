@@ -1,10 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  ArrowRight,
-  Download,
-} from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
@@ -175,13 +172,12 @@ export default function HomePage() {
               Built with modern technologies for modern development
             </p>
           </motion.div>
-
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-items-center">
             {techStack.map((tech, index) => (
               <motion.div
                 key={tech.name}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
                 className="text-center group relative"
