@@ -9,6 +9,7 @@ import {
   Globe,
   Layout,
   Lightbulb,
+  Lock,
   MessageCircle,
   Palette,
   Puzzle,
@@ -16,6 +17,7 @@ import {
   Shield,
   Sparkles,
   Terminal,
+  Users,
   Workflow,
   Zap,
 } from "lucide-react";
@@ -279,3 +281,27 @@ export const changelogs = [
     ],
   },
 ];
+
+export const securityFeatures = [
+  {
+    title: "Secure by Default",
+    description: "Built-in security features to protect your data",
+    icon: Lock,
+  },
+  {
+    title: "Enterprise Ready",
+    description: "Compliant with industry standards",
+    icon: Shield,
+  },
+  {
+    title: "Team Management",
+    description: "Advanced user roles and permissions",
+    icon: Users,
+  },
+];
+
+export const requirements = {
+  Windows: ["Windows 10 or later", "4GB RAM minimum", "2GB disk space", "DirectX 11 compatible GPU"],
+  Linux: ["Modern Linux distribution", "4GB RAM minimum", "2GB disk space", "OpenGL 3.3+ GPU"],
+  macOS: ["macOS 11 or later", "4GB RAM minimum", "2GB disk space", "Metal compatible GPU"]
+}

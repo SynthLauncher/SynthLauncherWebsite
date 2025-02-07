@@ -1,5 +1,4 @@
 import { LucideProps } from "lucide-react";
-import React from "react";
 
 interface Stat {
     number: number;
@@ -65,9 +64,12 @@ export interface SecurityCardProps {
     description: string;
     
     className?: string;
-    innerClassName?: string;
-    boxClassName?: string;
     iconClassName?: string;
     titleClassName?: string;
     descriptionClassName?: string;
+}
+
+export interface RequirementsCardProps {
+    os: string;
+    requirements: string[];
 }

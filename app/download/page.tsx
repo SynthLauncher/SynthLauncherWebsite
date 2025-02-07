@@ -15,8 +15,9 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
-import { platforms } from "@/lib/data";
+import { platforms, securityFeatures } from "@/lib/data";
 import DownloadCard from "@/components/download-card";
+import SecurityCard from "@/components/security";
 
 export default function DownloadPage() {
   return (
@@ -38,7 +39,7 @@ export default function DownloadPage() {
         </motion.div>
 
         {/* Download Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           {platforms.map((platform, index) => (
             <motion.div
               key={platform.name}
@@ -55,7 +56,7 @@ export default function DownloadPage() {
                 type={platform.type}
                 version={platform.version}
                 imageWidth={40}
-                imageHeight={40}   
+                imageHeight={40}
               />
             </motion.div>
           ))}
@@ -67,35 +68,18 @@ export default function DownloadPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
         >
-          <Card className="p-8 bg-gradient-to-br from-purple-900/40 to-purple-800/40 border-purple-500/30 backdrop-blur-sm bg-transparent">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <Lock className="w-8 h-8 text-purple-400 mx-auto mb-4" />
-                <h4 className="text-lg font-semibold text-white mb-2">
-                  Secure by Default
-                </h4>
-                <p className="text-purple-200/80">
-                  Built-in security features to protect your data
-                </p>
-              </div>
-              <div className="text-center">
-                <Shield className="w-8 h-8 text-purple-400 mx-auto mb-4" />
-                <h4 className="text-lg font-semibold text-white mb-2">
-                  Enterprise Ready
-                </h4>
-                <p className="text-purple-200/80">
-                  Compliant with industry standards
-                </p>
-              </div>
-              <div className="text-center">
-                <Users className="w-8 h-8 text-purple-400 mx-auto mb-4" />
-                <h4 className="text-lg font-semibold text-white mb-2">
-                  Team Management
-                </h4>
-                <p className="text-purple-200/80">
-                  Advanced user roles and permissions
-                </p>
-              </div>
+          <Card className="p-8 bg-gradient-to-br from-purple-900/40 to-purple-800/40 border-purple-500/30 backdrop-blur-sm bg-transparent flex">
+            <div
+              className="grid grid-cols-1 md:grid-cols-3 gap-8" 
+            >
+              {securityFeatures.map((feature, index) => (
+                <SecurityCard
+                  key={index}
+                  title={feature.title}
+                  description={feature.description}
+                  icon={feature.icon}
+                />
+              ))}
             </div>
           </Card>
         </motion.div>

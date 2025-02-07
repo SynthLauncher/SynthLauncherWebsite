@@ -43,7 +43,7 @@ export function Navbar() {
           </motion.div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <div className="flex items-center space-x-4">
               {menuItems.map((item, index) => (
                 <motion.div
@@ -77,7 +77,7 @@ export function Navbar() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-purple-200 hover:text-white p-2"
