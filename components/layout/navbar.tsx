@@ -13,7 +13,7 @@ export function Navbar() {
   const menuItems = [
     { href: "/", label: "Home" },
     { href: "/download", label: "Download" },
-    { href: "/support", label: "Support" },
+    { href: "/support", label: "Ssupport" },
     { href: "/changelogs", label: "Changelogs" },
     { href: "/releases", label: "Releases" }
   ];
@@ -35,10 +35,6 @@ export function Navbar() {
                 src="/navlogo.svg"
                 quality={100}
               />
-
-              {/* <span className="text-2xl font-bold bg-gradient-title text-transparent bg-clip-text">
-                  SynthLauncher
-              </span> */}
             </Link>
           </motion.div>
 
@@ -85,6 +81,7 @@ export function Navbar() {
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
+
         </div>
       </div>
 
@@ -105,6 +102,7 @@ export function Navbar() {
               {item.label}
             </Link>
           ))}
+          
           <Button
             variant="outline"
             className="w-full mt-2
@@ -115,6 +113,7 @@ export function Navbar() {
           </Button>
         </div>
       </motion.div>
+
     </nav>
   );
 }

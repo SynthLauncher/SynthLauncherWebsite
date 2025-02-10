@@ -112,7 +112,7 @@ export function Footer() {
         >
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-purple-200/60 text-sm">
-              © 2024 SynthLauncher ORG. All rights reserved.
+              © {new Date().getFullYear()} SynthLauncher ORG. All rights reserved.
             </p>
             <div className="flex items-center space-x-4 text-sm text-purple-200/60">
               <span className="flex items-center space-x-1">
