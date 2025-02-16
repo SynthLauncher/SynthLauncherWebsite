@@ -15,7 +15,7 @@ export function Navbar() {
     { href: "/download", label: "Download" },
     { href: "/support", label: "Support" },
     { href: "/changelogs", label: "Changelogs" },
-    { href: "/releases", label: "Releases" }
+    { href: "/releases", label: "Releases" },
   ];
 
   return (
@@ -28,7 +28,7 @@ export function Navbar() {
             className="flex-shrink-0"
           >
             <Link href="/" className="flex items-center space-x-2">
-              <Image 
+              <Image
                 width={285}
                 height={285}
                 alt="logo"
@@ -61,13 +61,15 @@ export function Navbar() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.4 }}
               >
-                <Button
-                  variant="outline"
-                  className="bg-transparent border-purple-500 border-2 border-dashed text-white hover:text-purple-200 hover:bg-purple-500/20 active:scale-95 transition-all duration-300"
-                >
-                  <Github className="w-4 h-4 mr-2" />
-                  GitHub
-                </Button>
+                <Link href="https://github.com/SynthLauncher">
+                  <Button
+                    variant="outline"
+                    className="bg-transparent border-purple-500 border-2 border-dashed text-white hover:text-purple-200 hover:bg-purple-500/20 active:scale-95 transition-all duration-300"
+                  >
+                    <Github className="w-4 h-4 mr-2" />
+                    GitHub
+                  </Button>
+                </Link>
               </motion.div>
             </div>
           </div>
@@ -78,10 +80,13 @@ export function Navbar() {
               onClick={() => setIsOpen(!isOpen)}
               className="text-purple-200 hover:text-white p-2"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
-
         </div>
       </div>
 
@@ -102,20 +107,21 @@ export function Navbar() {
               {item.label}
             </Link>
           ))}
-          
+
           <div className="flex">
-            <Button
-              variant="outline"
-              className="w-full mx-2 mt-2
+            <Link href="https://github.com/SynthLauncher">
+              <Button
+                variant="outline"
+                className="w-full mx-2 mt-2
               bg-transparent border-purple-500 border-2  text-white hover:text-purple-200 hover:bg-purple-500/20"
-            >
-              <Github className="w-4 h-4 mr-2" />
-              GitHub
-            </Button>
+              >
+                <Github className="w-4 h-4 mr-2" />
+                GitHub
+              </Button>
+            </Link>
           </div>
         </div>
       </motion.div>
-
     </nav>
   );
 }
