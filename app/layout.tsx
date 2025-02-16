@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import { Navbar } from "../components/layout/navbar";
 import { Footer } from "../components/layout/footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -43,13 +44,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-black">
       <body
         className={`${inter.className} min-h-screen bg-gradient-to-br from-purple-900 via-gray-900 to-black`}
       >
         <Navbar />
 
-        <main>{children}</main>
+        <main className="bg-black">{children}</main>
 
         <Footer />
 

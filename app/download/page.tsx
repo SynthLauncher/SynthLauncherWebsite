@@ -1,27 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Check,
-  Download,
-  Shield,
-  Terminal,
-  Code,
-  Cpu,
-  Layers,
-  Users,
-  Lock,
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import Image from "next/image";
 import { platforms, securityFeatures } from "@/lib/data";
 import DownloadCard from "@/components/download-card";
 import SecurityCard from "@/components/security";
 
 export default function DownloadPage() {
   return (
-    <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-black">
       <div className="max-w-7xl mx-auto mt-5">
         {/* Header */}
         <motion.div

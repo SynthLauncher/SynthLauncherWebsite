@@ -13,13 +13,13 @@ export function Navbar() {
   const menuItems = [
     { href: "/", label: "Home" },
     { href: "/download", label: "Download" },
-    { href: "/support", label: "Ssupport" },
+    { href: "/support", label: "Support" },
     { href: "/changelogs", label: "Changelogs" },
     { href: "/releases", label: "Releases" }
   ];
 
   return (
-    <nav className="fixed w-full z-50 bg-black/20 backdrop-blur-lg border-b border-purple-500/20">
+    <nav className="fixed w-full z-50 bg-black/50 backdrop-blur-lg border-b border-purple-500/20 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
         <div className="flex items-center justify-between h-16">
           <motion.div
@@ -50,7 +50,7 @@ export function Navbar() {
                 >
                   <Link
                     href={item.href}
-                    className="text-purple-200 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+                    className="text-purple-200 hover:text-white px-3 py-2 rounded-md text-sm font-semibold transition-colors duration-200"
                   >
                     {item.label}
                   </Link>
@@ -91,26 +91,28 @@ export function Navbar() {
         animate={{ height: isOpen ? "auto" : 0 }}
         className="md:hidden overflow-hidden"
       >
-        <div className="px-2 pt-2 pb-3 space-y-1 bg-black/20 backdrop-blur-lg">
+        <div className="px-2 pt-2 pb-3 space-y-1 bg-black/10 backdrop-blur-lg">
           {menuItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-purple-200 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              className="text-purple-200 hover:text-white block px-3 py-2 rounded-md text-base font-semibold"
               onClick={() => setIsOpen(false)}
             >
               {item.label}
             </Link>
           ))}
           
-          <Button
-            variant="outline"
-            className="w-full mt-2
-            bg-transparent border-purple-500 border-2  text-white hover:text-purple-200 hover:bg-purple-500/20"
-          >
-            <Github className="w-4 h-4 mr-2" />
-            GitHub
-          </Button>
+          <div className="flex">
+            <Button
+              variant="outline"
+              className="w-full mx-2 mt-2
+              bg-transparent border-purple-500 border-2  text-white hover:text-purple-200 hover:bg-purple-500/20"
+            >
+              <Github className="w-4 h-4 mr-2" />
+              GitHub
+            </Button>
+          </div>
         </div>
       </motion.div>
 
