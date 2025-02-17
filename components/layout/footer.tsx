@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Heart, Twitter } from "lucide-react";
+import { Facebook, Github, Heart, Instagram, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
 import { MutableRefObject } from "react";
 
@@ -37,7 +37,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-black/20 backdrop-blur-lg border-t border-purple-500/20">
+    <footer className="bg-sky-950/20 backdrop-blur-lg border-t border-sky-500/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -48,26 +48,51 @@ export function Footer() {
             className="space-y-4"
           >
             <Link href="/" className="flex items-center space-x-2">
-              <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">
+              <span className="text-2xl font-bold bg-gradient-to-l from-sky-400 to-purple-400 text-transparent bg-clip-text">
                 SynthLauncher
               </span>
             </Link>
+            
             <p className="text-purple-200/60 text-sm">
               Modern, Open-Source, Free Minecraft Launcher For Everyone!
             </p>
+
             <div className="flex space-x-4">
-              <a
+              <Link
                 href="#"
                 className="text-purple-200/60 hover:text-purple-200 transition-colors"
               >
                 <Twitter className="h-5 w-5" />
-              </a>
-              <a
+              </Link>
+              
+              <Link
                 href="#"
                 className="text-purple-200/60 hover:text-purple-200 transition-colors"
               >
                 <Github className="h-5 w-5" />
-              </a>
+              </Link>
+            
+              <Link
+                href="#"
+                className="text-purple-200/60 hover:text-purple-200 transition-colors"
+              >
+                <Linkedin className="h-5 w-5" />
+              </Link>
+              
+              <Link
+                href="#"
+                className="text-purple-200/60 hover:text-purple-200 transition-colors"
+              >
+                <Instagram className="h-5 w-5" />
+              </Link>
+              
+              <Link
+                href="#"
+                className="text-purple-200/60 hover:text-purple-200 transition-colors"
+              >
+                <Facebook className="h-5 w-5" />
+              </Link>
+
             </div>
           </motion.div>
 

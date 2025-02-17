@@ -50,7 +50,7 @@ export function Navbar() {
                 >
                   <Link
                     href={item.href}
-                    className="text-purple-200 hover:text-white px-3 py-2 rounded-md text-sm font-semibold transition-colors duration-200"
+                    className="text-sky-200 hover:text-sky-300 px-3 py-2 rounded-md text-sm font-semibold transition-colors duration-200"
                   >
                     {item.label}
                   </Link>
@@ -64,7 +64,7 @@ export function Navbar() {
                 <Link href="https://github.com/SynthLauncher">
                   <Button
                     variant="outline"
-                    className="bg-transparent border-purple-500 border-2 border-dashed text-white hover:text-purple-200 hover:bg-purple-500/20 active:scale-95 transition-all duration-300"
+                    className="bg-transparent border-sky-500 border-2 border-dashed text-white hover:text-sky-200 hover:bg-sky-500/20 active:scale-95 transition-all duration-300"
                   >
                     <Github className="w-4 h-4 mr-2" />
                     GitHub

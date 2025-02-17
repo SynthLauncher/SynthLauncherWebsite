@@ -85,7 +85,7 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Powerful Features
             </h2>
-            <p className="text-xl text-purple-200/80 max-w-2xl mx-auto">
+            <p className="text-xl text-sky-200/80 max-w-2xl mx-auto">
               Everything you need to start your Minecraft journey!
             </p>
           </motion.div>
