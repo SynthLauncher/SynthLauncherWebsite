@@ -19,7 +19,7 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="fixed w-full z-50 bg-black/50 backdrop-blur-lg border-b border-purple-500/20 ">
+    <nav className="fixed w-full z-50 bg-black/50 backdrop-blur-lg border-b border-sky-500/20 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
         <div className="flex items-center justify-between h-16">
           <motion.div

@@ -2,16 +2,7 @@
 
 import { motion } from "framer-motion";
 import {
-  Bug,
   Check,
-  GitBranch,
-  GitCommit,
-  GitPullRequest,
-  Rocket,
-  Sparkles,
-  Zap,
-  Shield,
-  Code,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -31,7 +22,7 @@ export default function ChangelogPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Changelogs
           </h1>
-          <p className="text-xl text-purple-200/80 max-w-2xl mx-auto">
+          <p className="text-xl text-sky-200/80 max-w-2xl mx-auto">
             Keep track of updates and improvements to ModernUI. We're constantly
             working to make it better.
           </p>
@@ -44,7 +35,7 @@ export default function ChangelogPage() {
           transition={{ delay: 0.2 }}
           className="mb-16"
         >
-          <Card className="overflow-hidden bg-purple-900/30 border-purple-500/30">
+          <Card className="overflow-hidden bg-sky-900/30 border-sky-500/30">
             {/* Banner Image */}
             <div className="relative h-64">
               <Image
@@ -56,7 +47,7 @@ export default function ChangelogPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-8">
-                <span className="px-3 py-1 bg-purple-500/20 text-purple-200 rounded-full text-sm">
+                <span className="px-3 py-1 bg-sky-500/50 text-sky-100 rounded-full text-sm">
                   Latest Release
                 </span>
                 <h2 className="text-3xl font-bold text-white mt-2">
@@ -73,7 +64,7 @@ export default function ChangelogPage() {
                     <div className="text-2xl font-bold text-white mb-1">
                       {stat.value}
                     </div>
-                    <div className="text-purple-200/60 text-sm">
+                    <div className="text-sky-200/60 text-sm">
                       {stat.label}
                     </div>
                   </div>
@@ -85,12 +76,12 @@ export default function ChangelogPage() {
                 {changelogs[0].changes.map((change) => (
                   <div key={change.title} className="space-y-4">
                     <div className="flex items-start space-x-4">
-                      <change.icon className="w-6 h-6 text-purple-400 mt-1" />
+                      <change.icon className="w-6 h-6 text-sky-400 mt-1" />
                       <div>
                         <h4 className="text-white font-semibold">
                           {change.title}
                         </h4>
-                        <p className="text-purple-200/60">
+                        <p className="text-sky-200/60">
                           {change.description}
                         </p>
                       </div>
@@ -99,7 +90,7 @@ export default function ChangelogPage() {
                       {change.details.map((detail) => (
                         <div
                           key={detail}
-                          className="flex items-center space-x-2 text-purple-200/80"
+                          className="flex items-center space-x-2 text-sky-200/80"
                         >
                           <Check className="w-4 h-4 text-green-400" />
                           <span>{detail}</span>
@@ -112,75 +103,13 @@ export default function ChangelogPage() {
 
               {/* Actions */}
               <div className="mt-8 flex flex-wrap gap-4">
-                <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700">
+                <Button className="bg-gradient-to-r from-purple-600 to-sky-600">
                   Download v{changelogs[0].version}
-                </Button>
-                <Button
-                  variant="outline"
-                  className="border-purple-500 text-black hover:text-purple-200 hover:bg-purple-500/20"
-                >
-                  View Documentation
                 </Button>
               </div>
             </div>
           </Card>
         </motion.div>
-
-        {/* Previous changelogs */}
-        <div className="space-y-8">
-          {changelogs.slice(1).map((release, index) => (
-            <motion.div
-              key={release.version}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 + index * 0.1 }}
-            >
-              <Card className="p-6 bg-purple-900/30 border-purple-500/30 backdrop-blur-sm">
-                <div className="flex items-center justify-between mb-6">
-                  <div className="flex items-center space-x-4">
-                    <release.icon className="w-8 h-8 text-purple-400" />
-                    <div>
-                      <h3 className="text-xl font-bold text-white">
-                        v{release.version}
-                      </h3>
-                      <p className="text-purple-200/60">{release.date}</p>
-                    </div>
-                  </div>
-                  <span
-                    className={`px-3 py-1 rounded-full text-sm ${
-                      release.type === "major"
-                        ? "bg-pink-500/20 text-pink-200"
-                        : "bg-purple-500/20 text-purple-200"
-                    }`}
-                  >
-                    {release.type === "major"
-                      ? "Major Release"
-                      : "Minor Release"}
-                  </span>
-                </div>
-                <p className="text-purple-200/80 mb-6">{release.description}</p>
-                <div className="space-y-4">
-                  {release.changes.map((change) => (
-                    <div
-                      key={change.title}
-                      className="flex items-start space-x-4"
-                    >
-                      <change.icon className="w-5 h-5 text-purple-400 mt-1" />
-                      <div>
-                        <h4 className="text-white font-semibold">
-                          {change.title}
-                        </h4>
-                        <p className="text-purple-200/60">
-                          {change.description}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </Card>
-            </motion.div>
-          ))}
-        </div>
       </div>
     </div>
   );
