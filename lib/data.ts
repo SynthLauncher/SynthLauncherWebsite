@@ -91,8 +91,8 @@ export const benefits = [
 ];
 
 export const stats = [
-  { number: "10M+", label: "Downloads" },
-  { number: "50K+", label: "Active Users" },
+  { number: "40+", label: "Downloads" },
+  { number: "34+", label: "Active Users" },
   { number: "99.9%", label: "Uptime" },
   { number: "24/7", label: "Support" },
 ];
