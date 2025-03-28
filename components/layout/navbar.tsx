@@ -94,7 +94,7 @@ export function Navbar() {
       <motion.div
         initial={false}
         animate={{ height: isOpen ? "auto" : 0 }}
-        className="md:hidden overflow-hidden"
+        className="lg:hidden overflow-hidden"
       >
         <div className="px-2 pt-2 pb-3 space-y-1 bg-black/10 backdrop-blur-lg">
           {menuItems.map((item) => (
@@ -109,7 +109,7 @@ export function Navbar() {
           ))}
 
           <div className="flex">
-            <Link href="https://github.com/SynthLauncher">
+            <Link href="https://github.com/SynthLauncher" className="w-full">
               <Button
                 variant="outline"
                 className="w-full mx-2 mt-2

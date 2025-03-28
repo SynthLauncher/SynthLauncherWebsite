@@ -40,12 +40,14 @@ export default function HomePage() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="flex flex-col sm:flex-row justify-center gap-4"
           >
+            <Link href="/download">
             <Button
               size="lg"
               className="bg-gradient-to-tr from-sky-500 to-purple-500  text-lg h-14 px-10 active:scale-95 transition-all duration-300 font-semibold"
             >
               <Download className="mr-2 h-5 w-5" /> Get Started
-            </Button>
+              </Button>
+              </Link>
           </motion.div>
         </div>
       </div>
